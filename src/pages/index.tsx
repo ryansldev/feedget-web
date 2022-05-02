@@ -1,9 +1,10 @@
+import { Widget } from "@components/Widget";
 import type { NextPage } from "next";
 import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>NLW Return</title>
         <meta name="description" content="NLW Return" />
@@ -11,9 +12,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <button>NLW Return</button>
+        <Widget />
       </main>
-    </div>
+    </>
   );
 };
 
