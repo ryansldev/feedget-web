@@ -10,10 +10,12 @@ import { ArrowLeft } from "phosphor-react";
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
   onFeedbackRestartRequested: () => void;
+  onFeedbackSent: () => void;
 }
 export const FeedbackContentStep: FC<FeedbackContentStepProps> = ({
   feedbackType,
   onFeedbackRestartRequested,
+  onFeedbackSent,
 }) => {
   const [screenshot, setScreenshot] = useState<string | null>(null);
   const [comment, setComment] = useState("");
@@ -23,6 +25,8 @@ export const FeedbackContentStep: FC<FeedbackContentStepProps> = ({
   function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
     console.log(screenshot, comment);
+
+    onFeedbackSent();
   }
 
   return (
