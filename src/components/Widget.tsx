@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import { WidgetForm } from "@components/WidgetForm";
 import { Popover } from "@headlessui/react";
+import { WidgetForm } from "~components/WidgetForm";
 import { ChatTeardropDots } from "phosphor-react";
 
 const Widget: FC = () => {
