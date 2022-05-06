@@ -23,6 +23,7 @@
       "~utils/*": ["./src/utils/*"],
       "~assets/*": ["./src/assets/*"],
       "~types/*": ["./src/types/*"],
+      "~libs/*": ["./src/libs/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
